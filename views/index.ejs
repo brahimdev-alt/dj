@@ -1,0 +1,22 @@
+<%- include('layouts/main', { title: "L'équipe de santé - Accueil" }) %>
+
+<!-- Hero Section -->
+<header class="relative h-screen">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/hero-medical.jpg');"></div>
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="relative container mx-auto px-6 h-full flex items-center">
+        <div class="text-white max-w-2xl">
+            <h1 class="text-5xl font-bold mb-6">Soins professionnels à domicile</h1>
+            <p class="text-xl mb-8">Une équipe dévouée pour prendre soin de vous dans le confort de votre foyer</p>
+            <a href="#contact" class="bg-medical-blue text-white px-8 py-3 rounded-full hover:bg-blue-700 transition">
+                Prendre rendez-vous
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Services Section -->
+<%- include('partials/services') %>
+
+<!-- Contact Section -->
+<%- include('partials/contact-form') %>

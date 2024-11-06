@@ -1,0 +1,51 @@
+<section id="contact" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Prendre rendez-vous</h2>
+        <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
+            <form action="/contact" method="POST" id="contactForm" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block mb-2">Nom</label>
+                        <input type="text" name="nom" required
+                            class="w-full px-4 py-2 border rounded focus:outline-none focus:border-medical-blue">
+                    </div>
+                    <div>
+                        <label class="block mb-2">Prénom</label>
+                        <input type="text" name="prenom" required
+                            class="w-full px-4 py-2 border rounded focus:outline-none focus:border-medical-blue">
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block mb-2">Email</label>
+                        <input type="email" name="email" required
+                            class="w-full px-4 py-2 border rounded focus:outline-none focus:border-medical-blue">
+                    </div>
+                    <div>
+                        <label class="block mb-2">Téléphone</label>
+                        <input type="tel" name="telephone" required
+                            class="w-full px-4 py-2 border rounded focus:outline-none focus:border-medical-blue">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block mb-2">Date souhaitée du rendez-vous</label>
+                    <input type="datetime-local" name="dateRdv" required
+                        class="w-full px-4 py-2 border rounded focus:outline-none focus:border-medical-blue">
+                </div>
+
+                <div>
+                    <label class="block mb-2">Message</label>
+                    <textarea name="message" rows="4"
+                        class="w-full px-4 py-2 border rounded focus:outline-none focus:border-medical-blue"></textarea>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-medical-blue text-white py-3 rounded hover:bg-blue-700 transition">
+                    Envoyer la demande
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
